@@ -1,0 +1,43 @@
+html {
+	font-size: 62.5%;
+}
+
+form {
+	margin: 25vh auto;
+	width: 85rem;
+	font-size: 1.5rem;
+}
+
+form div {
+	position: relative;
+	border-bottom: 1px solid black;
+	width: 30rem;
+	margin: 2rem 5.25rem;
+	display: inline-block;
+}
+
+form div:nth-child(4) {
+	width: 71rem;
+}
+
+input {
+	width: 100%;
+	height: 4rem;
+	margin: 0;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+	padding: 0 1rem;
+}
+
+label {
+	position: absolute;
+	left: 0;
+	padding: 1.15rem 1rem;
+	transition: all 0.4s ease;
+}
+
+input:focus + label {
+	top: -1rem;
+	padding: 0 1rem;
+}
