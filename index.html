@@ -6,7 +6,7 @@
 	<title>Login</title>
 </head>
 <body>
-	<form>
+	<form action="/user" method="POST" novalidate>
 		<div>
 			<input type="text" name="name" id="name">
 			<label for="name">Name</label>
@@ -24,7 +24,7 @@
 			<label for="address">Address</label>
 		</div>
 		<div>
-			<input type="text" name="city" for="city">
+			<input type="text" name="city" for="city" id="city">
 			<label for="city">City</label>
 		</div>
 		<div>
@@ -38,6 +38,9 @@
 		<div>
 			<input type="text" name="country" id="country">
 			<label for="country">Country</label>		
+		</div>
+		<div>
+			<button class="btn" type="submit">Submit</button>
 		</div>
 	</form>
 	<script type="text/javascript" src="javascript/index.js"></script>	
